@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Gilded Hour — a bank heist game</title>
+<style>
+  html, body {
+    margin: 0;
+    padding: 0;
+    background: #0a0e18;
+    height: 100%;
+  }
+  body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  canvas {
+    display: block;
+    width: 1280px;
+    height: 720px;
+    background: #232c3d;
+  }
+  .visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    white-space: nowrap;
+  }
+</style>
+</head>
+<body>
+<canvas id="game" width="1280" height="720"></canvas>
+<p id="status" class="visually-hidden" aria-live="polite">Loading The Gilded Hour.</p>
+<script type="module" src="./src/main.js"></script>
+</body>
+</html>
